@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>NguyenYen</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <style>
+    @keyframes yen{
+    0%   {margin-top:70vh;}
+    100%   {margin-top:-2vh;}
+    }
+    @keyframes yeen{
+    0%   {opacity:1;}
+    100%   {opacity:0;}
+    }
+    @keyframes bg{
+    0%  {background-color:blue;}
+    100% {background-color:red;}
+    }
+    h1{
+    transition: margin-top 1s;
+    animation: yen 1s infinite linear alternate, yeen .02s infinite linear alternate;
+    /*animation-duration: .1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;*/
+    }
+    body{
+    animation:bg .2s infinite linear alternate;
+    overflow:hidden;
+    }
+      h1:hover{
+      
+      margin-top:1000px;
+      }
+    </style>
+  </head>
+  <body style="background-color:blue">
+    <h1 style="font-size:15vw; color:white; font-family:'Century Gothic'; width:100%; text-align:center;">NguyenYen</h1>
+  </body>
+</html>
